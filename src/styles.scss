@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+@font-face {
+  font-family: JetBrains Mono;
+  src: url(assets/jetbrain-mono/woff/JetBrainsMono-Regular.woff) format("woff");
+  font-style: normal;
+}
+
+*, *:focus, *:active {
+  outline: 0;
+}
+
+body {
+  font-family: "JetBrains Mono", serif;
+  background-color: $primary;
+}

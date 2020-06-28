@@ -1,0 +1,10 @@
+<div class="top-bar">
+    <div class="name-board">
+        <div class="name-icon">K</div>
+        <div class="name"><strong>Kayis</strong> Rahman</div>
+    </div>
+    <span class="empty-spacer"></span>
+    <ul class="menu-list" *ngFor="let item of menus">
+        <li [ngClass]="activeItem == item  ? 'active' : ''" (click)="toggleActive(item)"><a href="#">{{item}}</a></li>
+    </ul>
+</div>
